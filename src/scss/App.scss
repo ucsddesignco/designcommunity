@@ -1,0 +1,63 @@
+@import "./Reset.scss";
+@import "./Typography.scss";
+@import "./Vars.scss";
+
+html {
+  background-color: $black;
+}
+
+.container{
+    margin: $spacer2;
+
+    button{
+        width: 95%;
+        border-radius: 0%;
+        border: 2px solid $white;
+        height: 5rem;
+        background-color: $black;
+        margin-top: $spacer2;
+    }
+
+    .checkbox{
+        border: 2px solid purple;
+    }
+
+    label{
+        margin-top: $spacer1;
+        display: flex;
+
+        p{
+            margin-left: $spacer1;
+        }
+    }
+
+    h3{
+        margin-top: $spacer3;
+    }
+}
+
+.memberContainer {
+    > img{
+        width: 100%;
+        height: auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    > img:hover{
+        filter: none;
+    }
+
+    >p{
+        margin: $base 0;
+    }
+  .info {
+    display: flex;
+    margin-top: $base;
+    p {
+      margin-left: $spacer1;
+    }
+  }
+
+  margin-bottom: $spacer2;
+}
